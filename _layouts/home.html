@@ -3,24 +3,23 @@ layout: page
 ---
 
 <div class="post-content" style="text-align: justify;">
-  Vulnerabilities are a known problem in today’s software supply chain (SSC). Because software
-  components often depend on external dependencies (libraries), attackers can exploit vulnerabilities in one component
-  to spread malicious code, which creates security risks for projects that rely on those vulnerable components. Existing
-  research addresses these challenges through software composition analysis (SCA). Beyond the revelation, SCA tools
-  employ various vulnerability detection and remediation approaches, resulting in different outcomes. However,
-  ineffective solutions may introduce new issues, such as compilation failures, dependency conflicts, and additional
-  vulnerabilities.<br>
-  To address this, we propose <u>Vuln</u> <u>Scan</u> and <u>Pro</u>tection (<strong>VULNSCANPRO</strong>), a robust solution for detection and
-  remediation vulnerabilities in Maven projects. Specifically, <strong>VULNSCANPRO</strong> builds a fine-grained method graph to
-  identify bloated code and vulnerable dependencies. The method graph is mapped to the project’s dependency tree,
-  forming a comprehensive dependency graph that highlights vulnerabilities. Based on this analysis, we propose three
-  solutions for vulnerability remediation: (1) Removing bloated dependencies that contain vulnerabilities, thereby
-  resolving security risks and reducing maintenance overhead. (2) Upgrading vulnerable dependencies to the closest
-  non-vulnerable versions, while pinning the versions of transitive dependencies introduced by the vulnerable
-  dependency, in order to mitigate compatibility issues and prevent the introduction of new vulnerabilities. (3)
-  Eliminating bloated code within vulnerable dependencies, particularly when security patches are either incompatible or
-  absent. Experimental results show that these solutions effectively mitigate vulnerabilities and enhance the overall
-  security of the project.
+  Vulnerabilities are a known problem in modern Open Source Software (OSS). Most developers often rely on third-party
+  libraries to accelerate feature implementation. However, these libraries may contain vulnerabilities that attackers
+  can exploit to propagate malicious code, posing security risks to dependent projects. Existing research addresses
+  these challenges through software composition analysis (SCA) for vulnerability detection and remediation.
+  Nevertheless, current solutions may introduce additional issues, such as incompatibilities, dependency conflicts, and
+  additional vulnerabilities.<br>
+  To address this, we propose <u>Vuln</u> <u>Scan</u> and <u>Pro</u>tection (<strong>VULNSCANPRO</strong>), a robust
+  solution for detection and remediation vulnerabilities in Maven projects. Specifically, <strong>VULNSCANPRO</strong>
+  builds a fine-grained method graph to identify unreachable methods. The method graph is mapped to the
+  project’s dependency tree, constructing a comprehensive vulnerability propagation graph that identifies unreachable
+  vulnerable APIs and dependencies. Based on this analysis, we propose three solutions for vulnerability remediation:
+  (1) Removing unreachable vulnerable dependencies, thereby resolving security risks and reducing maintenance overhead.
+  (2) Upgrading vulnerable dependencies to the closest non-vulnerable versions, while pinning the versions of transitive
+  dependencies introduced by the vulnerable dependency, in order to mitigate compatibility issues and prevent the
+  introduction of new vulnerabilities. (3) Eliminating unreachable vulnerable APIs, particularly when security patches
+  are either incompatible or absent. Experimental results show that these solutions effectively mitigate vulnerabilities
+  and enhance the overall security of the project.
 
 </div>
 
@@ -31,7 +30,8 @@ layout: page
     <img src="/assets/img/tool.svg" alt="avatar" height="50" width="50">
 
     <span>
-      <a href="https://vulnscanpro.github.io/Vulnscanpro"><strong> An effective automated tool for vulnerability remediation</strong></a><br>
+      <a href="https://vulnscanpro.github.io/Vulnscanpro"><strong> An effective automated tool for vulnerability
+          remediation</strong></a><br>
     </span>
   </div>
 
