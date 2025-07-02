@@ -1,2 +1,2 @@
-# vulnscanpro.github.io
+Tool:
 https://vulnscanpro.github.io/
